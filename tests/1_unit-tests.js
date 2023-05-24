@@ -9,143 +9,143 @@ suite('Unit Tests', () => {
     assert.equal(
       translator.translate(
         'Mangoes are my favorite fruit.',
-        'American to British'
+        'american-to-british'
       ),
-      'Mangoes are my favourite fruit.'
+      'Mangoes are my <span class="highlight">favourite</span> fruit.'
     );
     assert.equal(
       translator.translate(
         'I ate yogurt for breakfast.',
-        'American to British'
+        'american-to-british'
       ),
-      'I ate yoghurt for breakfast.'
+      'I ate <span class="highlight">yoghurt</span> for breakfast.'
     );
     assert.equal(
       translator.translate(
         "We had a party at my friend's condo.",
-        'American to British'
+        'american-to-british'
       ),
-      "We had a party at my friend's flat."
+      'We had a party at my friend\'s <span class="highlight">flat</span>.'
     );
     assert.equal(
       translator.translate(
         'Can you toss this in the trashcan for me?',
-        'American to British'
+        'american-to-british'
       ),
-      'Can you toss this in the bin for me?'
+      'Can you toss this in the <span class="highlight">bin</span> for me?'
     );
     assert.equal(
-      translator.translate('The parking lot was full.', 'American to British'),
-      'The car park was full.'
+      translator.translate('The parking lot was full.', 'american-to-british'),
+      'The <span class="highlight">car park</span> was full.'
     );
     assert.equal(
       translator.translate(
         'Like a high tech Rube Goldberg machine.',
-        'American to British'
+        'american-to-british'
       ),
-      'Like a high tech Heath Robinson device.'
+      'Like a high tech <span class="highlight">Heath Robinson device</span>.'
     );
     assert.equal(
       translator.translate(
         'To play hooky means to skip class or work.',
-        'American to British'
+        'american-to-british'
       ),
-      'To bunk off means to skip class or work.'
+      'To <span class="highlight">bunk off</span> means to skip class or work.'
     );
     assert.equal(
       translator.translate(
         'No Mr. Bond, I expect you to die.',
-        'American to British'
+        'american-to-british'
       ),
-      'No Mr Bond, I expect you to die.'
+      'No <span class="highlight">Mr</span> Bond, I expect you to die.'
     );
     assert.equal(
       translator.translate(
         'Dr. Grosh will see you now.',
-        'American to British'
+        'american-to-british'
       ),
-      'Dr Grosh will see you now.'
+      '<span class="highlight">Dr</span> Grosh will see you now.'
     );
     assert.equal(
-      translator.translate('Lunch is at 12:15 today.', 'American to British'),
-      'Lunch is at 12:15 today.'
+      translator.translate('Lunch is at 12:15 today.', 'american-to-british'),
+      'Lunch is at <span class="highlight">12.15</span> today.'
     );
 
     assert.equal(
       translator.translate(
         'We watched the footie match for a while.',
-        'British to American'
+        'british-to-american'
       ),
-      'We watched the soccer match for a while.',
+      'We watched the <span class="highlight">soccer</span> match for a while.',
       'to American working'
     );
     assert.equal(
       translator.translate(
         'Paracetamol takes up to an hour to work.',
-        'British to American'
+        'british-to-american'
       ),
-      'Tylenol takes up to an hour to work.',
+      '<span class="highlight">Tylenol</span> takes up to an hour to work.',
       'to American working'
     );
     assert.equal(
       translator.translate(
         'First, caramelise the onions.',
-        'British to American'
+        'british-to-american'
       ),
-      'First, caramelize the onions.',
+      'First, <span class="highlight">caramelize</span> the onions.',
       'to American working'
     );
     assert.equal(
       translator.translate(
         'I spent the bank holiday at the funfair.',
-        'British to American'
+        'british-to-american'
       ),
-      'I spent the public holiday at the carnival.',
+      'I spent the <span class="highlight">public holiday</span> at the <span class="highlight">carnival</span>.',
       'to American working'
     );
     assert.equal(
       translator.translate(
         'I had a bicky then went to the chippy.',
-        'British to American'
+        'british-to-american'
       ),
-      'I had a cookie then went to the fish-and-chip shop.',
+      'I had a <span class="highlight">cookie</span> then went to the <span class="highlight">fish-and-chip shop</span>.',
       'to American working'
     );
     assert.equal(
       translator.translate(
         "I've just got bits and bobs in my bum bag.",
-        'British to American'
+        'british-to-american'
       ),
-      "I've just got odds and ends in my fanny pack.",
+      'I\'ve just got <span class="highlight">odds and ends</span> in my <span class="highlight">fanny pack</span>.',
       'to American working'
     );
     assert.equal(
       translator.translate(
         'The car boot sale at Boxted Airfield was called off.',
-        'British to American'
+        'british-to-american'
       ),
-      'The swap meet at Boxted Airfield was called off.',
+      'The <span class="highlight">swap meet</span> at Boxted Airfield was called off.',
       'to American working'
     );
     assert.equal(
-      translator.translate('Have you met Mrs Kalyani?', 'British to American'),
-      'Have you met Mrs. Kalyani?',
+      translator.translate('Have you met Mrs Kalyani?', 'british-to-american'),
+      'Have you met <span class="highlight">Mrs.</span> Kalyani?',
       'to American working'
     );
     assert.equal(
       translator.translate(
         "Prof Joyner of King's College, London.",
-        'British to American'
+        'british-to-american'
       ),
-      "Prof. Joyner of King's College, London.",
+      '<span class="highlight">Prof.</span> Joyner of King\'s College, London.',
       'to American working'
     );
     assert.equal(
       translator.translate(
         'Tea time is usually around 4 or 4.30.',
-        'British to American'
+        'british-to-american'
       ),
-      'Tea time is usually around 4 or 4.30.',
+      'Tea time is usually around 4 or <span class="highlight">4:30</span>.',
       'to American working'
     );
   });
