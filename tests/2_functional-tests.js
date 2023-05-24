@@ -52,7 +52,7 @@ suite('Functional Tests', () => {
       .end(function (err, res) {
         assert.equal(res.status, 200);
         assert.deepEqual(res.body, {
-          error: 'No text to translate',
+          error: 'Required field(s) missing',
         });
       });
     done();
